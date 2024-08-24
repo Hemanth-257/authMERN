@@ -47,7 +47,7 @@ function Signup() {
       } else if (!success) {
         handleError(message);
       }
-      console.log(result);
+      // console.log(result);
     } catch (err) {}
   };
   return (
