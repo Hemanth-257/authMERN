@@ -12,4 +12,4 @@ export const handleError = (msg) => {
   });
 };
 
-export const APIurl = process.env.REACT_API_1_URL || "http://localhost:8080";
+export const APIUrl = process.env.REACT_API_1_URL || "http://localhost:8080";

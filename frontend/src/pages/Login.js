@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { APIurl, handleError, handleSuccess } from "../utils";
+import { APIUrl, handleError, handleSuccess } from "../utils";
 import { ToastContainer } from "react-toastify";
 
 function Login() {
@@ -25,7 +25,7 @@ function Login() {
       return handleError("All fields are required");
     }
     try {
-      const url = `${APIurl}/auth/login`;
+      const url = `${APIUrl}/auth/login`;
       const response = await fetch(url, {
         method: "POST",
         headers: {
