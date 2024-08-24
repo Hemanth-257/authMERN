@@ -11,3 +11,5 @@ export const handleError = (msg) => {
     position: "top-center",
   });
 };
+
+export const APIurl = process.env.REACT_API_1_URL || "http://localhost:8080";

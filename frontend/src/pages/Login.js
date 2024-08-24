@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { handleError, handleSuccess } from "../utils";
-import { ToastContainer } from "react-toastify";
+import { APIurl, ToastContainer } from "react-toastify";
 
 function Login() {
   const [loginInfo, setLoginInfo] = useState({
@@ -25,7 +25,7 @@ function Login() {
       return handleError("All fields are required");
     }
     try {
-      const url = "http://localhost:8080/auth/login";
+      const url = `${APIurl}/auth/login`;
       const response = await fetch(url, {
         method: "POST",
         headers: {
