@@ -1,2 +1,3 @@
-# authMERN
-MERN app 1
+#authMERN
+
+MERN Stack Application
